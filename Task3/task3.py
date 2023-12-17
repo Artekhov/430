@@ -1,10 +1,10 @@
 import json
 
 # Чтение данных из файлов
-with open('tests.json', 'r') as tests_file:
+with open(sys.argv[1], 'r') as tests_file:
 	tests_data = json.load(tests_file)
 
-with open('values.json', 'r') as values_file:
+with open(sys.argv[2], 'r') as values_file:
 	values_data = json.load(values_file)
 
 # Функция для заполнения значений тестов
